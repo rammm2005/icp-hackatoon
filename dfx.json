@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "icp-hackatoon-backend": {
+      "main": "src/icp-hackatoon-backend/main.mo",
+      "type": "motoko"
+    },
+    "icp-hackatoon-frontend": {
+      "dependencies": [
+        "icp-hackatoon-backend"
+      ],
+      "source": [
+        "src/icp-hackatoon-frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "icp-hackatoon-frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
